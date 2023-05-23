@@ -1,0 +1,25 @@
+{
+  "estudantes": [
+    {
+      "id": 1,
+      "nome": "Wilton",
+      "curso": "Engenharia",
+      "semestre": 3,
+      "periodo": "Noturno"
+    },
+    {
+      "id": 2,
+      "nome": "Anna",
+      "curso": "Medicina",
+      "semestre": 5,
+      "periodo": "Integral"
+    },
+    {
+      "id": 3,
+      "nome": "John",
+      "curso": "Cinema",
+      "semestre": 1,
+      "periodo": "Noturno"
+    }
+  ]
+}
