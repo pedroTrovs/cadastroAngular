@@ -1,1 +1,48 @@
-<p>lista works!</p>
+<div class="row">
+  <div class="col-8 m-auto">
+    <form [formGroup]="formGroupEstudante">
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nome: </label>
+        <input type="text" formControlName="nome" class="form-control" id="nome" placeholder="nome">
+      </div>
+      <div class="mb-3">
+        <label for="curso" class="form-label">Curso: </label>
+        <input type="text" formControlName="curso" class="form-control" id="curso" placeholder="curso">
+      </div>
+      <div class="mb-3">
+        <label for="semestre" class="form-label">Semestre: </label>
+        <input type="number" formControlName="semestre" class="form-control" id="semestre" placeholder="semestre">
+      </div>
+      <div class="mb-3">
+        <label for="select" class="form-label">Período: </label>
+        <select class="form-select" formControlName="periodo" id="select">
+          <option value="matutino">Matutino</option>
+          <option value="vespertino">Vespertino</option>
+          <option value="noturno">Noturno</option>
+          <option value="integral">Integral</option>
+        </select>
+      </div>
+      <button class="btn btn-primary" (click)="add()">Adicionar</button>
+    </form>
+  </div>
+</div>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Curso</th>
+        <th scope="col">Semestre</th>
+        <th scope="col">Período</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let estudande of lista;">
+        <th scope="row">{{estudande.id}}</th>
+        <td>{{estudande.nome}}</td>
+        <td>{{estudande.curso}}</td>
+        <td>{{estudande.semestre}}</td>
+        <td>{{estudande.periodo}}</td>
+      </tr>
+    </tbody>
+</table>

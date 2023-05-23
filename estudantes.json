@@ -20,6 +20,13 @@
       "curso": "Cinema",
       "semestre": 1,
       "periodo": "Noturno"
+    },
+    {
+      "id": 4,
+      "nome": "pedro",
+      "curso": "ads",
+      "semestre": 3,
+      "periodo": "matutino"
     }
   ]
 }
